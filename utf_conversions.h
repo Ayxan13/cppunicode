@@ -60,7 +60,7 @@ namespace cppunicode
                 if (!detail::utf8_trail_byte(*u8_begin++, code_point))
                     return -1;
 
-            if (code_point < 0xFFFF)
+            if (code_point <= 0xFFFF)
             {
                 if (u16out)
                     *u16out++ = static_cast<char16_t>(code_point);
