@@ -8,6 +8,7 @@
 #include <ranges>
 #include <stdexcept>
 #include <type_traits>
+#include <bit>
 
 namespace unic
 {
